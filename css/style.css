@@ -458,14 +458,14 @@ canvas {
 	color: transparent;
 }
 #gallery ul{
-    float:left;
-    margin:20px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
 }
 #gallery ul li{
-    float:left;
-    width:32%;
-    margin-right: 2%;
-    margin-bottom: 1%;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 #gallery ul li:nth-child(3n){
     margin-right: 0;
@@ -664,6 +664,13 @@ footer p a {
   #updates input:checked + label {
     width: 350px;
   }
+  #gallery ul{
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+  }
+  #gallery ul li{
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 745px) {
@@ -708,6 +715,13 @@ footer p a {
   margin-bottom: 50px;
   text-shadow:none;
   color: white;
+}  
+#gallery ul{
+  grid-template-columns: auto auto ;
+  padding: 5px;
+}
+#gallery ul li{
+  padding: 10px;
 }
 }
 @media only screen and (max-width: 450px) {
