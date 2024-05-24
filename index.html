@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="30x20" href="resources/logo.png">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Renvnza | Home</title>
+      <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var video = document.getElementById('myVideo');
+          // Ensure video properties are set correctly
+          video.muted = true;
+          video.autoplay = true;
+          video.loop = true;
+          video.playsInline = true;
+
+        })
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var video = document.getElementById('video');
+          var overlay = document.getElementById('overlay');
+      
+          // Ensure video properties are set correctly
+          video.muted = true;
+          video.autoplay = true;
+          video.loop = true;
+          video.playsInline = true;
+      
+          // Play the video and handle any potential errors
+          video.play().catch(error => {
+              console.error('Error trying to play the video:', error);
+          });
+      
+          // Add click event listener to toggle mute/unmute
+          overlay.addEventListener('click', function() {
+              video.muted = !video.muted;
+              // Play the video if it's paused when unmuted
+              if (!video.muted && video.paused) {
+                  video.play().catch(error => {
+                      console.error('Error trying to play the video after unmuting:', error);
+                  });
+              }
+          });
+      });
+      // scripts.js
+document.addEventListener("DOMContentLoaded", function() {
+  const loadingScreen = document.getElementById("loading-screen");
+  const content = document.getElementById("content");
+
+  // Simulate a delay to show the loading screen (remove in production)
+  setTimeout(function() {
+      loadingScreen.style.display = "none";
+      content.style.display = "block";
+  }, 3000); // 2 seconds delay
+});
+
+        </script>
+        
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="resources/logo.png" alt="">
+</div>
+<div id="content" style="display:none;">
+
+  <header class="sticky">
+    <div class="left">
+       <img src="resources/logo.png" alt="logo" />
+    </div>
+    <div class="right">
+      <a href="#" class="buy-ticket">Buy tickets</a>
+    </div>
+  </header>
+  <section id="spotlight" style="display: flex;
+  flex-direction: column;
+  align-items: center;">
+    <video autoplay muted id="myVideo">
+      <source src="resources/bg.mov" >
+      </video>
+      <h1>Renvnza 24</h1>
+    </section>
+    
+   <section id="parallax">
+     <a href="#parallax" class="lets-go">Lets Go</a>
+     <div class="wrapper-proshow">
+      <div class="proshow-left ">
+          <h1>Pro show</h1>
+          <p>The UCK took a major initiative to bring forth an event – SNIGDHA which involves the active presence of students from the orphanage.
+              This event is conducted specially for these students, for their entertainment and wellbeing. It was launched by UCK in the year 2013 and was successfully initiated for continuous 7 seasons. Unfortunately due to the Covid pandemic this year the college was not able to conduct the event.</p>
+          <a href="#" class="button">Buy tickets</a>
+      </div>
+      <div class="right">
+          <img src="resources/s.png" alt="img" />
+          <section id="events">
+            <section class="wrapper">
+                <swiper-container class="eventbox">
+                    <swiper-slide>
+                        <img src="resources/imageone.jpg" alt="image" />
+                        <div>
+                            <a href="#" class="bold">Register Now</a href="#">
+                              <p>slide to see more events</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="resources/imageone.jpg" alt="image" />
+                        <div>
+                            <a href="#" class="bold">Rejister Now</a href="#">
+                              <p>slide to see more events</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="resources/imageone.jpg" alt="image" />
+                        <div>
+                            <a href="#" class="bold">Rejister Now</a href="#">
+                              <p>slide to see more events</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="resources/imageone.jpg" alt="image" />
+                        <div>
+                            <a href="#" class="bold">Rejister Now</a href="#">
+                              <p>slide to see more events</p>
+                        </div>
+                    </swiper-slide>
+    
+                    </swiper-container>
+                    
+                </section>
+    
+        </section>
+            
+         
+      </div>
+     </div>
+          
+    </section>
+
+    <section id="updates">
+        <div class="wrapper-card">
+            <div class="container">
+          
+              <!-- card 1 -->
+              <input type="radio" name="slide" id="c1" checked>
+              <label for="c1" class="card">
+                <div class="row">
+                  <div class="icon">1</div>
+                  <div class="description">
+                    <h4>Winter</h4>
+                    <p>Winter has so much to offer -
+                      creative activities</p>
+                  </div>
+                </div>
+              </label>
+              
+              <!-- card 2 -->
+              <input type="radio" name="slide" id="c2">
+              <label for="c2" class="card">
+                <div class="row">
+                  <div class="icon">2</div>
+                  <div class="description">
+                    <h4>Digital Technology</h4>
+                    <p>Gets better every day -
+                      stay tuned</p>
+                  </div>
+                </div>
+              </label>
+          
+              <!-- card 3 -->
+              <input type="radio" name="slide" id="c3">
+              <label for="c3" class="card">
+                <div class="row">
+                  <div class="icon">3</div>
+                  <div class="description">
+                    <h4>Globalization</h4>
+                    <p>Help people all over the world</p>
+                  </div>
+                </div>
+              </label>
+          
+              
+            </div>
+          </div>
+    </section>
+    <section>
+      <div class="video-container">
+        <video id="video" width="100"   autoplay loop muted  playsinline>
+            <source src="./resources/video.mp4" type="video/mp4" >
+            Your browser does not support the video tag.
+        </video>
+        <div id="overlay">
+            <div class="video_top">
+              <div class="left-border">
+                <p>25k+<br>
+                  REGISTRATIONS</p>
+              </div>
+              <div class="right-border">
+                <p>20k+<br>
+                  FOOTFALL</p>
+              </div>
+            </div>
+            <div class="logo-overlay">
+              <img src="./resources/logo.png" alt="">
+            </div>
+            <div class="video_bottom">
+              <div class="left-border">
+                <p>60+<br>
+                  TOTAL EVENTS</p>
+              </div>
+              <div class="right-border">
+                <p>150+<br>
+                  COLLEGES</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="poster">
+      <div class="poster-card"><img src="resources/poster.png" alt=""></div>
+      <div class="poster-card"><img src="resources/poster.png" alt=""></div>
+      <div class="poster-card"><img src="resources/poster.png" alt=""></div>
+  </section>
+  <section id="gallery">
+      <section class="wrapper">
+          <h1> MAJOR <span class="linear-text-gradient">EVENTS</span>
+          </h1>
+          <ul>
+            <li class="module">
+                <a href="" target="_blank" class="img">
+                    <img src="resources/Photo1.jpg" alt="image" class="ro" />
+                  </a>
+              </li>
+              
+              <li class="module">
+                <a href="resources/Photo2.jpg" target="_blank" class="img">
+                    <img src="resources/Photo3.jpg" alt="image" class="ro" />
+                  </a>
+              </li>
+            <li class="module">
+          <a href="resources/Photo4.jpg" target="_blank" class="img">
+                    <img src="resources/Photo2.jpg" alt="image" class="ro" />
+                  </a>
+              </li>
+              <li class="module">
+                <a href="resources/g1.jpg" target="_blank" class="img">
+                    <img src="resources/Photo4.jpg" alt="image" class="ro" />
+                  </a>
+              </li>
+              <li class="module">
+                <a href="resources/g2.jpg" target="_blank" class="img">
+                    <img src="resources/Photo5.jpg" alt="image" class="ro" />
+                  </a>
+              </li> 
+              <li class="module">
+          <a href="resources/g3.jpg" target="_blank" class="img">
+                    <img src="resources/Photo6.jpg" alt="image" class="ro" />
+                  </a>
+              </li>
+                <li class="module">
+                <a href="resources/photo.jpg" target="_blank" class="img">
+                    <img src="resources/photo.jpg" alt="image" class="ro" />
+                  </a>
+              </li>
+            <li class="module">
+          <a href="resources/photo.jpg" target="_blank" class="img">
+                    <img src="resources/photo.jpg" alt="image" class="ro" />
+                  </a>
+              </li>
+              <li class="module">
+                <a href="resources/g1.jpg" target="_blank" class="img">
+                    <img src="resources/photo.jpg" alt="image" class="ro" />
+                  </a>
+              </li>
+              <li class="module">
+                <a href="resources/g2.jpg" target="_blank" class="img">
+                    <img src="resources/photo.jpg" alt="image" class="ro" />
+                  </a>
+              </li> 
+              <li class="module">
+          <a href="resources/g3.jpg" target="_blank" class="img">
+                    <img src="resources/photo.jpg" alt="image" class="ro" />
+                  </a>
+              </li>
+              <li class="module">
+          <a href="resources/g3.jpg" target="_blank" class="img">
+                    <img src="resources/photo.jpg" alt="image" class="ro" />
+                  </a>
+              </li>
+          </ul>
+          <br class="clear" />
+      </section>
+  </section>
+    <section id="sponsors">
+      <div class="container">
+
+        <ul class="logogrid">
+           <li class="logogrid__item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg" class="logogrid__img" alt="Coca Cola">
+          </li>
+          <li class="logogrid__item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="logogrid__img" alt="Google">
+          </li>
+          <li class="logogrid__item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg" class="logogrid__img" alt="AirBnB">
+          </li>
+          <li class="logogrid__item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" class="logogrid__img" alt="Spotify">
+          </li>
+          <li class="logogrid__item">
+            <img src="https://upload.wikimedia.org/wikipedia/de/f/f9/Guinness_Logo.svg" class="logogrid__img" alt="Guinness">
+          </li>
+          <!-- <li class="logogrid__item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg" class="logogrid__img" alt="Audi">
+          </li>
+          <li class="logogrid__item">
+            <img src="resources/logo.png" class="logogrid__img" alt="Nike">
+          </li> -->
+          <li class="logogrid__item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logogrid__img" alt="Netflix">
+          </li>
+        </ul>
+      
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="hero">
+        <h1>Contact Us</h1>
+        <div class="social-links">
+        
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+         
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+        
+        </div>
+      </div>
+    </section>
+    <footer>
+				<section class="wrapper-footer">
+					<p>© 2024 Renvnza. All right reserved. | Developed by ucek</p>					
+				</section>
+		</footer>
+    <div class="parallax"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</div>
+
+</body>
+</html>
