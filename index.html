@@ -82,16 +82,16 @@
           document.getElementById("content").style.display = "block";
         }
         }
-	      $(function 0){
-              var $events = $('#events');
+	 $(function 0){
+           var $events = $('#eventbox');
               $.ajax({
               type: 'GET', url: '',
               success: function(events) {
-         $each(orders, function(i, events) {
-         $events-append('');
-        ‡);
-        ｝
-       ｝；
+                $each(orders, function(i, events) {
+                  $events-append('');
+                 ‡);
+              ｝
+          ｝；
        ｝）；
         </script>
         
@@ -134,7 +134,7 @@
           <img src="resources/s.png" alt="img" />
           <section id="events">
             <section class="wrapper">
-                <swiper-container class="eventbox">
+                <swiper-container class="eventbox" id="eventbox">
                     <swiper-slide>
                         <img src="resources/d25004ec-c592-45d1-8951-aa6c3f43e34b.jpeg" alt="image" />
                         <div>
@@ -142,7 +142,7 @@
                               <p>slide to see more events</p>
                         </div>
                     </swiper-slide>
-                    <swiper-slide>
+                    <!-- <swiper-slide>
                         <img src="resources/imageone.jpg" alt="image" />
                         <div>
                             <a href="#" class="bold">Register Now</a href="#">
@@ -162,7 +162,7 @@
                             <a href="#" class="bold">Register Now</a href="#">
                               <p>slide to see more events</p>
                         </div>
-                    </swiper-slide>
+                    </swiper-slide> -->
     
                     </swiper-container>
                     
