@@ -11,36 +11,33 @@
     <title>Renvnza | Home</title>
       <script>
         $(document).ready(function(){
-          // Add smooth scrolling to all links
           $("a").on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
-              // Prevent default anchor click behavior
               event.preventDefault();
-        
-              // Store hash
               var hash = this.hash;
-        
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              
               $('html, body').animate({
                 scrollTop: $(hash).offset().top
               }, 800, function(){
-           
-                // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
               });
-            } // End if
+            }
           });
         });
 
         document.addEventListener('DOMContentLoaded', function() {
+          
           var video = document.getElementById('myVideo');
-          // Ensure video properties are set correctly
+          
           video.muted = true;
           video.autoplay = true;
           video.playsInline = true;
+          video.oncanplay = function() {
+            stopLoading(1);              
+            video.play().catch(error => {
+                console.error('Error trying to play the video:', error);
+            });
+          };
 
         })
 
@@ -70,18 +67,21 @@
               }
           });
       });
-      // scripts.js
-document.addEventListener("DOMContentLoaded", function() {
-  const loadingScreen = document.getElementById("loading-screen");
-  const content = document.getElementById("content");
 
-  // Simulate a delay to show the loading screen (remove in production)
-  setTimeout(function() {
-      loadingScreen.style.display = "none";
-      content.style.display = "block";
-  }, 3000); // 2 seconds delay
-});
+      setTimeout(stopLoading, 2000, 1);
 
+      if(document.readyState === "complete") {
+          stopLoading(1);
+        }
+
+      let j = 0
+      function stopLoading(i) {
+        j += i;
+        if(j == 2) {
+          document.getElementById("loading-screen").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }
+        }
         </script>
         
 </head>
@@ -91,25 +91,27 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div id="content" style="display:none;">
 
-  <header class="sticky">
-    <div class="left">
+  <header class="sticky" style="display: flex; flex-direction: row; justify-content: space-between; ">
+    <div>
        <img src="resources/logo.png" alt="logo" />
     </div>
-    <div class="right">
-      <a href="#" class="buy-ticket">Buy tickets</a>
+    <div>
+      <a href="#" class="buy-ticket" style="margin-right: 40px;">Buy tickets</a>
     </div>
   </header>
   <section id="spotlight" style="display: flex;
+  min-height: 100dvh;
   flex-direction: column;
-  align-items: center;">
-    <video autoplay muted id="myVideo">
-      <source src="resources/bg.mov" >
+  align-items: center;
+  justify-content: center;">
+      <video autoplay muted id="myVideo">
+        <source src="resources/bg.mov" >
       </video>
       <h1>Renvnza 24</h1>
+      <a href="#parallax" class="lets-go bounce" style="position: absolute; bottom: 0px;">See More ↓</a>
     </section>
     
    <section id="parallax">
-     <a href="#parallax" class="lets-go">↓ View More ↓</a>
      <div class="wrapper-proshow">
       <div class="proshow-left ">
           <h1>Pro show</h1>
