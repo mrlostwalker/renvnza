@@ -583,6 +583,7 @@ body {
 #techfest {
   text-align: center;
   margin-bottom: 50px;
+  padding: 20px 0;
 }
 
 #techfest h1 {
@@ -610,6 +611,7 @@ body {
 
 .image-container img {
   max-width: 100%;
+  display: inline-block;
   height: auto;
   border-radius: 1rem;
   width: 500px;
@@ -648,6 +650,7 @@ body {
   .text-container p {
       padding: 0 20px; 
       font-size: 15px;
+      
   }
 }
 
