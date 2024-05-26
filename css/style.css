@@ -573,6 +573,87 @@ footer {
 footer p a {
   color: #000;
 }
+
+
+/*Auto expo section*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+#techfest {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#techfest h1 {
+  color: #000;
+  font-size: 35px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-family: 'american';
+}
+
+.auto-expo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping of flex items */
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Add margin to space out items when stacked */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  width: 500px;
+  margin-left: 40px;
+}
+
+.text-container {
+  flex: 1;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+
+.text-container p {
+  text-align: justify;
+  font-size: 20px;
+  font-family: "mont";
+}
+
+@media (max-width: 1080px) {
+  .auto-expo {
+      flex-direction: column; 
+      text-align: center; 
+  }
+  
+  .image-container {
+      margin-left: 0; 
+  }
+ .image-container img{
+      margin: 0;;
+ }
+  .text-container {
+      padding-left: 0;
+      margin-right: 0;
+  }
+
+  .text-container p {
+      padding: 0 20px; 
+      font-size: 15px;
+  }
+}
+
+
+
+
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
   .parallax {
@@ -674,6 +755,11 @@ footer p a {
   padding: 15px 40px 15px 25px;
   box-shadow: -8px 5px #31313187;
 }
+
+
+
+
+
 @media only screen and (max-width: 1533px) {
   .wrapper-proshow {
     flex-direction: column;
@@ -824,3 +910,4 @@ footer p a {
 	
 }
 }
+
