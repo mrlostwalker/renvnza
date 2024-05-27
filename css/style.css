@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @font-face {
+  font-family: "american";
+  src: url("../resources/fonts/american.otf"),
+    url("../resources/fonts/american.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'newacademy'; /* Name your font family */
   src: url('../resources/fonts/NEWACADEMY.ttf'); /* Locate the .ttf file within your directory*/
 }
@@ -72,13 +79,7 @@ footer,
 address {
   display: block;
 }
-@font-face {
-  font-family: "american";
-  src: url("../resources/fonts/american.otf"),
-    url("../resources/fonts/american.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
+
 @font-face {
   font-family: "medium";
   src: url("../resources/fonts/static/Montserrat-Medium.ttf");
