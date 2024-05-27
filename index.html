@@ -7,7 +7,10 @@
     <link rel="icon" type="image/png" sizes="30x20" href="resources/logo.png">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="./script.js"></script>
+    <script defer src="./data.js"></script>
     <title>Renvnza | Home</title>
       <script>
         $(document).ready(function(){
@@ -107,13 +110,13 @@
       <video autoplay muted id="myVideo">
         <source src="resources/bg.mov" >
       </video>
-      <h1>Renvnza 24</h1>
+      <h1 class="title">Renvnza 24</h1>
       <a href="#parallax" class="lets-go bounce" style="position: absolute; bottom: 0px;">See More ↓</a>
     </section>
     
    <section id="parallax">
      <div class="wrapper-proshow">
-      <div class="proshow-left ">
+      <div class="proshow-left animate-left">
           <h1>Pro show</h1>
           <p>Buckle up, music lovers! RANVENZA'24 is gonna blow the roof off. We're talking soulful sounds that'll stir your soul and performances so captivating you'll forget to blink.
 
@@ -123,10 +126,10 @@ Mark your calendars for (insert date) – it's gonna be a night of musical magic
           <a href="#" class="button">Buy tickets</a>
       </div>
       <div class="right">
-          <img src="resources/s.png" alt="img" />
+          <img src="resources/s.png" class="animate-right" alt="img" />
           <section id="events">
-            <section class="wrapper">
-                <swiper-container class="eventbox" id="eventbox">
+            <section class="wrapper animate-fade">
+                <swiper-container class="eventbox " id="eventbox">
                     <swiper-slide>
                         <img src="resources/d25004ec-c592-45d1-8951-aa6c3f43e34b.jpeg" alt="image" />
                         <div>
@@ -170,8 +173,7 @@ Mark your calendars for (insert date) – it's gonna be a night of musical magic
 
     <section id="updates">
         <div class="wrapper-card">
-            <div class="container">
-          
+            <div class="container animate-fade">
               <!-- card 1 -->
               <input type="radio" name="slide" id="c1" checked>
               <label for="c1" class="card">
@@ -247,15 +249,15 @@ Mark your calendars for (insert date) – it's gonna be a night of musical magic
         </div>
     </div>
     </section>
-    <section class="poster">
+    <section class="poster animate-fade">
       <div class="poster-card"><img src="resources/2.png" alt=""></div>
       <div class="poster-card"><img src="resources/2.png" alt=""></div>
       <div class="poster-card"><img src="resources/2.png" alt=""></div>
   </section>
   <section id="gallery">
-    <section id="techfest">
+    <section id="techfest ">
       <h1>AUTO EXPO</h1>
-      <section class="auto-expo">
+      <section class="auto-expo animate-fade">
            <div class="image-container">
               <img src="resources/car.jpg" alt="" srcset=""></div>
             <div class="text-container">
@@ -271,36 +273,36 @@ Mark your calendars for (insert date) – it's gonna be a night of musical magic
       <section class="wrapper">
           <h1> MAJOR <span class="linear-text-gradient">EVENTS</span>
           </h1>
-          <ul>
-            <li class="module">
-                <a href="" target="_blank" class="img">
-                    <img src="resources/Photo1.jpg" alt="image" class="ro" />
+          <ul class="eventList">
+            <li class="module animate-left">
+                <a href="" target="_blank" class="event-link">
+                    <img src="resources/Photo1.jpg" alt="image" class="event-image" />
                   </a>
               </li>
               
-              <li class="module">
-                <a href="resources/Photo2.jpg" target="_blank" class="img">
-                    <img src="resources/Photo3.jpg" alt="image" class="ro" />
+              <li class="module animate-left">
+                <a href="resources/Photo2.jpg" target="_blank" class="event-link">
+                    <img src="resources/Photo3.jpg" alt="image" class="event-image" />
                   </a>
               </li>
-            <li class="module">
-               <a href="resources/Photo4.jpg" target="_blank" class="img">
-                    <img src="resources/Photo2.jpg" alt="image" class="ro" />
+            <li class="module animate-left">
+               <a href="resources/Photo4.jpg" target="_blank" class="event-link">
+                    <img src="resources/Photo2.jpg" alt="image" class="event-image" />
                   </a>
               </li>
-              <li class="module">
-                <a href="resources/g1.jpg" target="_blank" class="img">
-                    <img src="resources/Photo4.jpg" alt="image" class="ro" />
+              <li class="module animate-right">
+                <a href="resources/g1.jpg" target="_blank" class="event-link">
+                    <img src="resources/Photo4.jpg" alt="image" class="event-image"  />
                   </a>
               </li>
-              <li class="module">
-                <a href="resources/g2.jpg" target="_blank" class="img">
-                    <img src="resources/Photo5.jpg" alt="image" class="ro" />
+              <li class="module animate-right">
+                <a href="resources/g2.jpg" target="_blank" class="event-link">
+                    <img src="resources/Photo5.jpg" alt="image" class="event-image"  />
                   </a>
               </li> 
-              <li class="module">
-                <a href="resources/g3.jpg" target="_blank" class="img">
-                    <img src="resources/Photo6.jpg" alt="image" class="ro" />
+              <li class="module animate-right">
+                <a href="resources/g3.jpg" target="_blank" class="event-link">
+                    <img src="resources/Photo6.jpg" alt="image" class="event-image" />
                   </a>
               </li>
               <!--  <li class="module">
@@ -338,7 +340,7 @@ Mark your calendars for (insert date) – it's gonna be a night of musical magic
       </section>
   </section>
     <section id="sponsors">
-      <div class="container">
+      <div class="container animate-fade">
 
         <ul class="logogrid">
            <li class="logogrid__item">

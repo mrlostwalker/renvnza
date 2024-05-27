@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
+@font-face {
+  font-family: 'newacademy'; /* Name your font family */
+  src: url('../resources/fonts/NEWACADEMY.ttf'); /* Locate the .ttf file within your directory*/
+}
 * {
   margin: 0;
   padding: 0;
@@ -97,6 +100,62 @@ address {
   font-weight: normal;
   font-style: normal;
 }
+
+.animate-left{
+  opacity: 0;
+  filter:blur(5px);
+  transform: translateX(-100%);
+  transition:all 1s ease-in-out;
+}
+.animate-left-show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.animate-right{
+  opacity: 0;
+  filter:blur(5px);
+  transform: translateX(50%);
+  transition:all 1s ease-in-out;
+}
+.animate-right-show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.animate-fade{
+  opacity: 0;
+  filter:blur(5px);
+  transition:all 1s ease-in-out;
+}
+.animate-fade-show{
+  opacity: 1;
+  filter: blur(0);
+}
+
+.module:nth-child(2){
+  transition-delay: 200ms;
+}
+.module:nth-child(3){
+  transition-delay: 400ms;
+}
+.module:nth-child(4){
+  transition-delay: 400ms;
+}
+.module:nth-child(5){
+  transition-delay: 200ms;
+}
+
+
+
+
+
+
+
+
+
 body {
   font-family: "american", "bold", "medium", Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -125,6 +184,11 @@ a:hover,
 .thumb img {
   display: block;
   width: 100%;
+}
+.title{
+  font-family: newacademy;
+  font-size: 50px;
+  color: #ffffff;
 }
 p {
   line-height: 1.6em;
@@ -175,12 +239,6 @@ header img {
   text-align: center;
 }
 
-
-#spotlight h1 {
-  color: #fff;
-  font-size: 55px;
-  letter-spacing: 5px;
-}
 #spotlight h1 span {
   display: inline-block;
   animation: slideLeft 1.5s forwards;
@@ -810,6 +868,9 @@ body {
   }
 }
 @media only screen and (max-width: 550px) {
+  .title{
+    font-size: 20px;
+  }
   .video_bottom {
     font-size: 12px;
   }
