@@ -971,6 +971,9 @@ body {
     font-size: 11px;
     font-family:"medium";
   }
+	header a{
+          padding-right: 10px;
+	}
   .wrapper-proshow h1{
 	font-size: 2rem;
 }
