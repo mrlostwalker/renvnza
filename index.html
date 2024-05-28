@@ -31,17 +31,19 @@
         document.addEventListener('DOMContentLoaded', function() {
           
           var video = document.getElementById('myVideo');
-          
+          var loadingDiv = document.getElementById('loading-screen');
+          var content = document.getElementById('content');
+
           video.muted = true;
           video.autoplay = true;
           video.playsInline = true;
-          video.oncanplay = function() {
-            stopLoading(1);              
-            video.play().catch(error => {
-                console.error('Error trying to play the video:', error);
-            });
-          };
 
+          setTimeout(function() {
+            console.log('Hiding loading div after 3 seconds');
+            loadingDiv.style.display = 'none';
+            content.style.display = 'block';
+          }, 3000);
+    
         })
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -71,25 +73,11 @@
           });
       });
 
-      setTimeout(stopLoading, 2000, 1);
-
-     if(document.readyState === "complete") {
-          stopLoading(1);
-        }
-
-      let j = 0
-      function stopLoading(i) {
-        j += i;
-        if(j == 2) {
-          document.getElementById("loading-screen").style.display = "none";
-          document.getElementById("content").style.display = "block";
-        }
-        } 
         </script>
         
 </head>
 <body>
-  <div id="loading-screen">
+  <div id="loading-screen" >
     <img src="resources/logo.png" alt="">
 </div>
 <div id="content" style="display:none;">
@@ -99,7 +87,7 @@
        <img src="resources/logo.png" alt="logo" />
     </div>
     <div>
-      <a href="www.events.renvnza.in" class="buy-ticket" style="margin-right: 40px; box-shadow:none;">Events</a>    
+      <a href="#" class="buy-ticket" style="margin-right: 40px; box-shadow:none;">Events</a>    
       <a href="#" class="buy-ticket" style="margin-right: 40px;">Buy tickets</a>
     </div>
   </header>
@@ -124,7 +112,7 @@
 But hold on to your hats, because here's the bombshell: the headliner for our proshow is a mystery, shrouded in secrecy! Can you feel the anticipation crackling in the air? We're itching to reveal the phenomenal artist who'll command the stage, but you'll just have to wait a little longer.
 
 Mark your calendars for (insert date) – it's gonna be a night of musical magic and unexpected twists you won't want to miss. Stay tuned, because trust us, you do NOT want to be left out of this!</p>
-          <a href="#" class="button">Buy tickets</a>
+          <a href="#" class="glow-on-hover">BUY TICKETS</a>
       </div>
       <div class="right">
           <img src="resources/s.png" class="animate-right" alt="img" />
@@ -292,67 +280,33 @@ Mark your calendars for (insert date) – it's gonna be a night of musical magic
                   </a>
               </li>
              
-
-              <!--  <li class="module">
-                <a href="resources/photo.jpg" target="_blank" class="img">
-                    <img src="resources/photo.jpg" alt="image" class="ro" />
-                  </a>
-              </li>
-            <li class="module">
-          <a href="resources/photo.jpg" target="_blank" class="img">
-                    <img src="resources/photo.jpg" alt="image" class="ro" />
-                  </a>
-              </li>
-              <li class="module">
-                <a href="resources/g1.jpg" target="_blank" class="img">
-                    <img src="resources/photo.jpg" alt="image" class="ro" />
-                  </a>
-              </li>
-              <li class="module">
-                <a href="resources/g2.jpg" target="_blank" class="img">
-                    <img src="resources/photo.jpg" alt="image" class="ro" />
-                  </a>
-              </li> 
-              <li class="module">
-          <a href="resources/g3.jpg" target="_blank" class="img">
-                    <img src="resources/photo.jpg" alt="image" class="ro" />
-                  </a>
-              </li>
-              <li class="module">
-          <a href="resources/g3.jpg" target="_blank" class="img">
-                    <img src="resources/photo.jpg" alt="image" class="ro" />
-                  </a>
-              </li> -->
-          </ul>
-          <br class="clear" />
-	       <ul class="">
-            <li class="module animate-left">
+            <li class="module animate-right">
                 <a href="" target="_blank" class="event-link">
                     <img src="resources/Photo1.jpg" alt="image" class="event-image" />
                   </a>
               </li>
               
-              <li class="module animate-left">
+              <li class="module animate-right">
                 <a href="resources/Photo2.jpg" target="_blank" class="event-link">
                     <img src="resources/Photo3.jpg" alt="image" class="event-image" />
                   </a>
               </li>
-            <li class="module animate-left">
+            <li class="module animate-right">
                <a href="resources/Photo4.jpg" target="_blank" class="event-link">
                     <img src="resources/Photo2.jpg" alt="image" class="event-image" />
                   </a>
               </li>
-              <li class="module animate-right">
+              <li class="module animate-left">
                 <a href="resources/g1.jpg" target="_blank" class="event-link">
                     <img src="resources/Photo4.jpg" alt="image" class="event-image"  />
                   </a>
               </li>
-              <li class="module animate-right">
+              <li class="module animate-left">
                 <a href="resources/g2.jpg" target="_blank" class="event-link">
                     <img src="resources/Photo5.jpg" alt="image" class="event-image"  />
                   </a>
               </li> 
-              <li class="module animate-right">
+              <li class="module animate-left">
                 <a href="resources/g3.jpg" target="_blank" class="event-link">
                     <img src="resources/Photo6.jpg" alt="image" class="event-image" />
                   </a>
