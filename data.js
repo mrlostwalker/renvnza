@@ -23,18 +23,6 @@ function getData(url) {
   });
 }
 
-function resolveData() {
-  var eventList = [];
-  getData(url).then((data) => {
-    data.forEach((item) => {
-      let eventData = {};
-      eventData.id = item[1];
-      eventData.image = item[5];
-      eventList.push(eventData);
-    });
-  });
-  return eventList;
-}
 
 function getImgLink(link) {
     return (
@@ -48,15 +36,13 @@ function getImgLink(link) {
     const listItems = document.querySelectorAll(".module");
     eventsData.forEach((item, index) => {
 
-      console.log(item, index);
 
       if (listItems[index]) {
-        console.log(listItems);
         const anchor = listItems[index].querySelector(".event-link");
         const img = listItems[index].querySelector(".event-image");
-        console.log(anchor);
+
         if (anchor && img) {
-          anchor.href = `https://events.renvnza.in/event/${item[1]}`
+          // anchor.href = `https://events.renvnza.in/event/${item[1]}`
           img.src = getImgLink(item[5]);
         }
       }
