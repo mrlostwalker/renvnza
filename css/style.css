@@ -504,13 +504,13 @@ canvas {
 }
 
 #updates .card[for="c1"] {
-  background-image: url("../resources/2.png");
+  background-image: url("../resources/a.png");
 }
 #updates .card[for="c2"] {
-  background-image: url("../resources/A.jgp");
+  background-image: url("../resources/a.jpg");
 }
 #updates .card[for="c3"] {
-  background-image: url("../resources/A.jpg");
+  background-image: url("../resources/2.png");
 }
 #updates .card[for="c4"] {
   background-image: url("../resources/2.png");
