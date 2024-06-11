@@ -1,17 +1,8 @@
 import React from "react";
-import Navlink from "./Navlink";
 import Link from "next/link";
-import { FiArrowDownRight } from "react-icons/fi";
 import { FaInstagram, FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
-import {AiOutlineGlobal} from "react-icons/ai"
 
 export default function Footer() {
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
 
   return (
     <footer className=" h-fit flex flex-col border-gray/40 bg-[#070707] text-white px-0 flex-wrap overflow-hidden">

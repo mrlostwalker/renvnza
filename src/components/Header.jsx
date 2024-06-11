@@ -3,35 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { Slant as Hamburger } from "hamburger-react";
 import { motion } from "framer-motion";
-// import { useAuthContext } from "@/context/auth-context";
+
 import Navlink from "@/components/Navlink";
 
 export default function Header() {
-  const [isVisible, setIsVisible] = React.useState(true);
+ 
   const [isOpen, setOpen] = React.useState(false);
-  // const { signInWithGoogle, appState, signOut } = useAuthContext();
 
-  React.useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-
-    //on  scroll down direction
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > window.innerHeight) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isOpen]);
 
   return (
     <>

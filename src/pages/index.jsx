@@ -6,7 +6,6 @@ import Video from "@/components/Video";
 import About from "@/components/About";
 import Marque2 from "@/components/Marque2";
 import Footer from "@/components/Footer";
-import Faq from "@/components/Faq";
 import Clock from "@/components/Clock";
 import Map from "@/components/Map";
 import gsap from "gsap";
