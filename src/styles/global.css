@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --soothing-black: "#0E1111";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  user-select: none;
+  /* outline: 1px red solid; */
+}
+
+.map {
+  filter: invert(100%);
+}
+
+::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+
+progress {
+  position: fixed;
+  top: 4.5rem;
+  z-index: 25;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 1.5px;
+  border: none;
+  background: transparent;
+}
+
+progress::-webkit-progress-bar {
+  background: #686868;
+}
+
+progress::-webkit-progress-value {
+  background-color: #9747ff;
+}
+
+.hackNav:hover .navPageNo {
+  color: #fff;
+}
+
+.signup {
+  background-image: url("/signup.jpg");
+}
+
+.video-section {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  top: -1rem;
+  z-index: 1;
+}
+
+.video-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vidDarpan {
+  color: #ffffff;
+  letter-spacing: -0.6vw;
+  text-align: center;
+  margin-top: -6rem;
+}
+
+.video-copy {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 30vw;
+  margin-left: -3vw;
+  background-color: rgb(0, 0, 0);
+  user-select: none;
+  mix-blend-mode: multiply;
+}
+
+.teamCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: translate(0, -100%);
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.menuPop {
+  background: url("/giphy.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.updown {
+  animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-6px);
+  }
+}
+
+.flex-card-container {
+  margin: 0 10px 0 0;
+  height: 100%;
+  width: 10%;
+  transition: 450ms all ease-in-out;
+  border-radius: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+.flex-card-container.active {
+  width: 70%;
+  z-index: 2;
+}
+
+.flex-card-container.active h1 {
+  text-orientation: mixed;
+  writing-mode: horizontal-tb;
+  rotate: 180deg;
+  transition: 450ms all ease-in-out;
+}
+
+flex-card-container.active .register {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .flex-card-container {
+    width: 80vw;
+    height: 100%;
+    margin: 0 0 10px 0;
+  }
+}
