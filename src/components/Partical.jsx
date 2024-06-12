@@ -1,6 +1,5 @@
-import Confetti from "react-confetti";
+
 import React, { useRef } from "react";
-import Image from "next/image";
 
 export default function Partical() {
   const confetiRef = useRef(null);
