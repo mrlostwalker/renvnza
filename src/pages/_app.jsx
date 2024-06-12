@@ -80,6 +80,8 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:description" content="Your description goes here" />
       </Head>
       {loading ? (
         <Loader />

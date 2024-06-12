@@ -100,12 +100,7 @@ progress::-webkit-progress-value {
   transition: all 0.5s ease;
 }
 
-.menuPop {
-  background: url("/giphy.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 
 .updown {
   animation: mover 2s infinite alternate;

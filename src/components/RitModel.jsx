@@ -79,7 +79,7 @@ export default function RitModel() {
                 {item.title}
               </h1>
             </div>
-            <Link href={`/events`} className="absolute inset-0">
+            <Link href={`https://events.renvnza.in`} className="absolute inset-0">
               <div className="h-full w-full"></div>
             </Link>
           </article>

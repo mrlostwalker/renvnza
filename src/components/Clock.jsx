@@ -8,7 +8,7 @@ function Clock() {
           date={new Date("2024-07-03T00:00:00").getTime()}
           className="text-[1.5rem] xl:text-[4rem]"
         />
-        <div className="text-[.8rem] flex gap-[26px] xl:gap-[70px] md:text-lg bottom-0 relative -tracking-tight">
+        <div className="text-[.8rem] flex gap-[26px] xl:gap-[55px] md:text-lg bottom-0 relative -tracking-tight">
           <span className=" ">
             DAY
           </span>
