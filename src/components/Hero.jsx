@@ -54,10 +54,10 @@ function Hero() {
         UNIVERSITY COLLEGE OF ENGINEERING KARIAVATTOM
         </h1>
         <div ref={subtitle} className="font-clash flex flex-wrap opacity-0">
-          <span className="text-[4.5rem] sm:text-[6.5rem] md:text-[9rem] lg:text-[9rem]">
+          <span className="text-[3.5rem] sm:text-[6.5rem] md:text-[9rem] lg:text-[9rem]">
           RENVNZA
           </span>
-          <span className="text-[#000000] relative top-[-3rem] font-chakra text-stroke-black text-[7rem] md:text-[9rem]">
+          <span className="text-[#000000] relative top-[-3rem] font-chakra text-stroke-black text-[5rem] md:text-[9rem]">
             2024
           </span>
         </div>

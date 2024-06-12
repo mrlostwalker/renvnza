@@ -52,7 +52,7 @@ const Home = () => {
         <div>
           <Hero />
           <div className="w-full justify-center pb-10 hidden xl:flex">
-            <video src="/bg.mp4" autoPlay muted className="w-[26rem] mt-36"></video>
+            <video src="/Bg.mp4" autoPlay muted className="w-[26rem] mt-36"></video>
           </div>
           <Video />
         </div>
