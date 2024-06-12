@@ -78,21 +78,20 @@ export default function About() {
       <div className="font-chakra text-base py-8 leading-[5px] xl:mt-4">
         <span
           ref={aboutdarpan}
-          className="text-base font-medium text-white xl:text-xl"
+          className="text-base font-medium  text-white xl:text-xl"
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum. Why do we use it? It is a long
-          established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout. The point of using Lorem
-          Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using
+          <strong>RenvnzA '24</strong>, the <strong>Techno-Cultural Odyssey </strong>of the University College of
+          Engineering, Kariavattom (UCEK), brings together kindred spirits to
+          explore the uncharted realms of a technological and cultural utopia.
+          This spectacular event features tech-manic workshops, intense
+          competitions, exciting recreational activities, and mesmerizing
+          cultural programs by renowned artists. <br /> <strong> It's more than just a fest; 
+          it's an incredible journey into the heart of innovation and
+          creativity.</strong> As we weave technology with a hint of cultural activities,
+          stay witness to this synergy connecting with visionary minds, and turn
+          into one of UCEK’s legacy, redefining the boundaries of possibility.
+          This year, RenvnzA will be conducted on the <strong>3rd </strong>, <strong>4th</strong>, and <strong>5th of July</strong>.
+          Join us for three days of unparalleled innovation and excitement.
         </span>
       </div>
       <div className="absolute font-clash font-bold text-white">
@@ -102,16 +101,24 @@ export default function About() {
       </div>
       <div
         ref={aboutaec}
-        className="flex flex-col mt-8 lg:flex-row items-center gap-8 py-8"
+        className="flex flex-col mt-20 lg:flex-row items-center gap-8 py-8"
       >
         <p className="text-white text-base xl:text-xl font-chakra font-medium">
-        Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum. Why do we use it? It is a long
-          established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout. The point of using Lorem
-          Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using
+          University College of Engineering Kariavattom (UCEK), the pride of the
+          Kariavattom campus spread across  <strong>400 acres</strong>, boasting <strong>32 departments </strong>,
+          is a breeding ground for future engineers, that nurture intellect.
+          UCEK, the center of innovation, neighbors the IT hub <strong>Technopark</strong>, and
+          <strong>UST Global</strong>, and features the <strong>Greenfield International Stadium </strong>just a
+          peek away, state-of-the-art labs, and seasoned faculty. <br />
+          <strong> UCEK stands as
+          a symbol of academic heritage and eminence. </strong> What sets us apart is our
+          success in holistic development, demonstrated by our alumni network
+          and notable <strong> National </strong>and <strong>International Communities</strong> such as <strong>IEEE, NSS,</strong>
+          and <strong>FOSS CELL. </strong> Other communities such as <strong> IEDC, GDSC, Mulearn </strong>and
+         <strong> TinkerHub </strong>have made significant contributions to what makes UCEK
+          proud. Graduates excel in prestigious companies, reflecting the
+          immaculate knowledge earned from here, and encouraging international
+          exposure that shines on the global stage.
         </p>
 
         <video

@@ -91,7 +91,7 @@ export default function Header() {
 
       {isOpen && (
         <motion.div
-          className="fixed top-0 menuPop left-0 w-[65vh] h-screen md:h-[95vh] md:ml-8 md:my-4 bg-black z-[26] backdrop-blur-sm rounded-xl border-[2px] border-gray/40"
+          className="fixed top-0  left-0 w-[65vh] h-screen md:h-[95vh] md:ml-8 md:my-4 bg-[#000000ad] z-[26] backdrop-blur-sm rounded-xl border-[2px] border-gray/40"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

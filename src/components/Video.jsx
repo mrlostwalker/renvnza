@@ -42,7 +42,7 @@ function Video() {
   return (
     <>
       <div ref={triggerRef} className="video-section hidden xl:block">
-        <video ref={videoRef} src="/overlay.mp4" autoPlay muted className="mt-[-3rem]"></video>
+        <video ref={videoRef} src="/dance.mp4" autoPlay muted className="mt-[-3rem]"></video>
         <div className="video-copy">
           <h1  className="vidDarpan font-bebas">
             RENVNZA
