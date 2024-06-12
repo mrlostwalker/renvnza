@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import InitialLoader from "@/components/InitialLoader";
 
+
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -81,7 +82,8 @@ export default function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
         <meta property="og:image" content="/logo.png" />
-        <meta property="og:description" content="Your description goes here" />
+        <meta property="og:description" content="Get ready to immerse yourself in the electrifying beats and vibrant energy of South India's largest techno cultural extravaganza, Renvnza '24" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       {loading ? (
         <Loader />
