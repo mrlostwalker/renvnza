@@ -67,7 +67,7 @@ export default function About() {
         <span>Thinking what is</span>
         <span
           ref={trigger}
-          className="text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-12"
+          className="text-[3.2rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-12"
         >
           <span className="text-[#3656a9]">RENVNZA</span>
         </span>
@@ -96,7 +96,7 @@ export default function About() {
         </span>
       </div>
       <div className="absolute font-clash font-bold text-white">
-        <span className="flex gap-6 text-[3.3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem]">
+        <span className="flex gap-6 text-[2.3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem]">
           About <Navlink name={"UCEK"} link={"/#about"} />{" "}
         </span>
       </div>
