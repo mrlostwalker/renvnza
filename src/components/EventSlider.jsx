@@ -24,7 +24,7 @@ export default function EventSlider() {
                   DAY - 1
                 </span>
                 <Image
-                  src="/day_1.jpg"
+                  src="/coming_soon.png"
                   alt="talk show"
                   width={500}
                   height={500}
@@ -42,7 +42,7 @@ export default function EventSlider() {
                   DAY - 2
                 </span>
                 <Image
-                  src="/day_2.jpg"
+                  src="/coming_soon.png"
                   alt="dj"
                   width={500}
                   height={500}

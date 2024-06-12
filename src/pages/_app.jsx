@@ -113,28 +113,7 @@ export default function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
             <Analytics />
 
-            <AnimatedCursor
-              innerSize={12}
-              outerSize={20}
-              trailingSpeed={15}
-              color="54, 86, 169"
-              outerAlpha={0.7}
-              innerScale={1.5}
-              outerScale={2}
-              clickables={[
-                "a",
-                'input[type="text"]',
-                'input[type="email"]',
-                'input[type="number"]',
-                'input[type="submit"]',
-                'input[type="image"]',
-                "label[for]",
-                "select",
-                "textarea",
-                "button",
-                ".link",
-              ]}
-            />
+            
           </main>
         </motion.div>
       )}
