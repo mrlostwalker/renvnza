@@ -38,10 +38,6 @@ const font_clash_display = LocalFont({
   variable: "--font-clash-display",
 });
 
-const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-  ssr: false,
-});
-
 export const metadata = {
   title: "RENVNZA",
   description: "Get ready to immerse yourself in the electrifying beats and vibrant energy of South India's largest techno cultural extravaganza, Renvnza '24",
