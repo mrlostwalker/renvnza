@@ -8,11 +8,13 @@
 
 html {
   scroll-behavior: smooth;
+  cursor:url("/cursor.png"), auto;
 }
 
 * {
   user-select: none;
   /* outline: 1px red solid; */
+
 }
 
 .map {
@@ -122,7 +124,6 @@ progress::-webkit-progress-value {
   width: 10%;
   transition: 450ms all ease-in-out;
   border-radius: 16px;
-  cursor: pointer;
   overflow: hidden;
   position: relative;
   background-position: center center;
