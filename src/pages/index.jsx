@@ -14,6 +14,17 @@ import RitModel from "@/components/RitModel";
 import EventSlider from "@/components/EventSlider";
 import Partical from "@/components/Partical";
 
+export const metadata = {
+  title: "RENVNZA",
+  description: "Get ready to immerse yourself in the electrifying beats and vibrant energy of South India's largest techno cultural extravaganza, Renvnza '24",
+  image: "/logo.png",
+  url: "https://renvnza.in", 
+  manifest: "/manifest.json",
+  metadataBase: new URL('https://renvnza.in'),
+  icons: "/logo_black.svg",
+}
+
+
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 

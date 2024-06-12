@@ -43,9 +43,12 @@ const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
 
 export const metadata = {
   title: "RENVNZA",
-  description: "RENVNZA is the annual techno-cultural fest of NIT Trichy",
+  description: "Get ready to immerse yourself in the electrifying beats and vibrant energy of South India's largest techno cultural extravaganza, Renvnza '24",
   image: "/logo.png",
-  url: "https://renvnza.in",
+  url: "https://renvnza.in", 
+  manifest: "/manifest.json",
+  metadataBase: new URL('https://renvnza.in'),
+  icons: "/logo_black.svg",
 }
 
 
