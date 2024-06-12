@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import { Chakra_Petch } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
 import { Bebas_Neue } from "next/font/google";
