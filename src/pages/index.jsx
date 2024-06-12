@@ -32,14 +32,14 @@ const Home = () => {
 
   return (
     <div className="bg-black h-fit">
-      <Head>
+      {/* <Head>
       <title>{"Renvnza'24"}</title>
-        <meta name="description" content={"Get ready to immerse yourself in the electrifying beats and vibrant energy of South India's largest techno cultural extravaganza, Renvnza '24"} />
-        <link rel="icon" href="/favicon.ico"  />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="apple-touch-icon" href="/logo.png" />
-        <link rel="manifest" href="/manifest.json" />
-      </Head>
+      <meta name="description" content={"} />
+      <link rel="icon" href="/favicon.ico"  />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="apple-touch-icon" href="/logo.png" />
+      <link rel="manifest" href="/manifest.json" />
+      </Head> */}
   
       <Header id="navbar" />
 
