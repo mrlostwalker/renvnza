@@ -79,10 +79,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>{"Renvnza'24"}</title>
-        <meta name="description" content={"Get ready to immerse yourself in the electrifying beats and vibrant energy of South India's largest techno cultural extravaganza, Renvnza '24"} />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-        <meta property="og:image" content="/logo.png" />
+        
       </Head>
       {loading ? (
         <Loader />
