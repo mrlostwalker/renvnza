@@ -42,6 +42,14 @@ const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
 
+export const metadata = {
+  title: "RENVNZA",
+  description: "RENVNZA is the annual techno-cultural fest of NIT Trichy",
+  image: "/logo.png",
+  url: "https://renvnza.in",
+}
+
+
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [loading, setLoading] = React.useState(false);
@@ -76,11 +84,10 @@ export default function MyApp({ Component, pageProps }) {
     return <InitialLoader />;
   }
 
+ 
   return (
     <>
-      <Head>
-        
-      </Head>
+      
       {loading ? (
         <Loader />
       ) : (
