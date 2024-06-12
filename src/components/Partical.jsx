@@ -18,7 +18,7 @@ export default function Partical() {
         autoPlay
         loop
         muted
-        className="rounded-3xl "
+        className="rounded-3xl  w-[20rem] h-[14rem] md:w-[24rem] xl:w-[68rem] xl:h-[31rem] object-cover"
       ></video>
     </div>
   );
