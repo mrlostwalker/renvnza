@@ -1,7 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef,useState  } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Navlink from "./Navlink";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,6 +60,14 @@ export default function About() {
     // //   }
     // );
   }, []);
+
+  const [videoSrc, setVideoSrc] = useState('');
+
+  useEffect(() => {
+    setVideoSrc('/overlay.mp4');
+  }, []);
+
+
 
   return (
     <div className="h-fit relative pt-4 px-2 xl:px-20  ">
@@ -121,13 +130,17 @@ export default function About() {
           exposure that shines on the global stage.
         </p>
 
+        {videoSrc ? (
         <video
-          src="/overlay.mp4"
+          src={videoSrc}
           autoPlay
           loop
           muted
           className="abvideo w-[22rem] h-[20rem] md:w-[24rem] xl:w-[28rem] xl:h-[18rem] object-cover rounded-2xl border border-gray/50"
         ></video>
+      ) : (
+        <span className="animate-pulse w-[22rem] h-[20rem] md:w-[24rem] xl:w-[28rem] xl:h-[18rem] rounded-2xl bg-[#c9c9c972]"></span>
+      )}
       </div>
     </div>
   );
