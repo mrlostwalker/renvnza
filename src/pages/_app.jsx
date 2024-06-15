@@ -37,15 +37,6 @@ const font_clash_display = LocalFont({
   variable: "--font-clash-display",
 });
 
-export const metadata = {
-  title: "RENVNZA",
-  description: "Get ready to immerse yourself in the electrifying beats and vibrant energy of South India's largest techno cultural extravaganza, Renvnza '24",
-  image: "/logo.png",
-  url: "https://renvnza.in", 
-  manifest: "/manifest.json",
-  metadataBase: new URL('https://renvnza.in'),
-  icons: "/logo_black.svg",
-}
 
 
 export default function MyApp({ Component, pageProps }) {
@@ -85,14 +76,6 @@ export default function MyApp({ Component, pageProps }) {
  
   return (
     <>
-      <Head>
-        <title>Renvnza'24</title>
-        <meta name="title" property="og:title" content="Renvnza'24"/>
-        <meta name="type" property="og:type" content="website"/>
-        <meta name="image" property="og:image" content="/logo.png"/>
-        <meta name="url" property="og:title" content="Renvnza'24"/>
-        <meta name="description" property="og:description" content="Get ready to immerse yourself in the electrifying beats and vibrant energy of South India's largest techno cultural extravaganza, Renvnza '24"/>
-      </Head>
       {loading ? (
         <Loader />
       ) : (

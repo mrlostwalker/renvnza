@@ -6,27 +6,27 @@ export default function RitModel() {
     {
       id: 1,
       title: "Cultural",
-      image: "/slider/cultural.jpg",
+      image: "/slider/cultural.jpeg",
     },
     {
       id: 2,
       title: "Events",
-      image: "/slider/events.jpg",
+      image: "/slider/events.webp",
     },
     {
       id: 3,
       title: "Games",
-      image: "/slider/games.jpg",
+      image: "/slider/games.avif",
     },
     {
       id: 4,
       title: "Workshops",
-      image: "/slider/workshop.avif",
+      image: "/slider/workshops.jpg",
     },
     {
       id: 5,
       title: "Proshows",
-      image: "/slider/proshow.jpeg",
+      image: "/slider/proshows.jpg",
     },
   ];
 
@@ -34,29 +34,8 @@ export default function RitModel() {
     const ACTIVECLASS = "active";
     const IMAGES = document.querySelectorAll(".flex-card-container");
 
-    IMAGES[0].classList.add(ACTIVECLASS);
 
-    function removeActiveClass() {
-      const elm = document.querySelector(`.${ACTIVECLASS}`);
-      if (elm) {
-        elm.classList.remove(ACTIVECLASS);
-      }
-    }
 
-    const t1 = setInterval(() => {
-      const current = document.querySelector(`.${ACTIVECLASS}`);
-      const next = current.nextElementSibling;
-      removeActiveClass();
-      if (next) {
-        next.classList.add(ACTIVECLASS);
-      } else {
-        IMAGES[0].classList.add(ACTIVECLASS);
-      }
-    }, 3000);
-
-    return () => {
-      clearInterval(t1);
-    };
   }, []);
 
   return (
@@ -65,11 +44,11 @@ export default function RitModel() {
         Explore Your Interests
       </h1>
 
-      <section class="flex flex-col items-center lg:flex-row lg:items-stretch justify-between w-[90%] max-w-[70rem] lg:h-[70vh] h-[100vh] mt-12">
+      <section  class="flex flex-col article-parent items-center lg:flex-row lg:items-stretch justify-between w-[90%] max-w-[70rem] lg:h-[70vh] h-[100vh] mt-12">
         {itemList.map((item) => (
-          <article
+          <article 
             key={item.id}
-            class="flex-card-container bg-cover bg-no-repeat"
+            class="flex-card-container bg-cover bg-no-repeat hover-action "
             style={{
               backgroundImage: `url(${item.image})`,
             }}
@@ -79,9 +58,9 @@ export default function RitModel() {
                 {item.title}
               </h1>
             </div>
-            <Link href={`https://events.renvnza.in`} className="absolute inset-0 cursor-auto">
+            {/* <Link href={`https://events.renvnza.in`} className="absolute inset-0 cursor-auto">
               <div className="h-full w-full"></div>
-            </Link>
+            </Link> */}
           </article>
         ))}
       </section>

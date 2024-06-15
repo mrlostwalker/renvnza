@@ -14,16 +14,6 @@ import RitModel from "@/components/RitModel";
 import EventSlider from "@/components/EventSlider";
 import Partical from "@/components/Partical";
 
-export const metadata = {
-  title: "RENVNZA",
-  description: "Get ready to immerse yourself in the electrifying beats and vibrant energy of South India's largest techno cultural extravaganza, Renvnza '24",
-  image: "/logo.png",
-  url: "https://renvnza.in", 
-  manifest: "/manifest.json",
-  metadataBase: new URL('https://renvnza.in'),
-  icons: "/logo_black.svg",
-}
-
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -42,14 +32,6 @@ const Home = () => {
 
   return (
     <div className="bg-black h-fit">
-      {/* <Head>
-      <title>{"Renvnza'24"}</title>
-      <meta name="description" content={"} />
-      <link rel="icon" href="/favicon.ico"  />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="apple-touch-icon" href="/logo.png" />
-      <link rel="manifest" href="/manifest.json" />
-      </Head> */}
   
       <Header id="navbar" />
 

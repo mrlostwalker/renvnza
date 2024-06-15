@@ -121,7 +121,7 @@ progress::-webkit-progress-value {
 .flex-card-container {
   margin: 0 10px 0 0;
   height: 100%;
-  width: 10%;
+  width: 20%;
   transition: 450ms all ease-in-out;
   border-radius: 16px;
   overflow: hidden;
@@ -131,6 +131,18 @@ progress::-webkit-progress-value {
   background-repeat: no-repeat;
   writing-mode: vertical-rl;
   text-orientation: sideways;
+}
+
+
+.hover-action:hover {
+  width: 100%;
+  z-index: 2;
+  h1{
+    text-orientation: mixed;
+    writing-mode: horizontal-tb;
+    rotate: 180deg;
+    transition: 450ms all ease-in-out;
+  }
 }
 
 .flex-card-container.active {
