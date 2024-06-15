@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import InitialLoader from "@/components/InitialLoader";
-import Head from "next/head";
+
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
