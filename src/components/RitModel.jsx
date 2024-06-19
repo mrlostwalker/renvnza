@@ -1,6 +1,4 @@
 import React from "react";
-import Link from "next/link";
-
 export default function RitModel() {
   const itemList = [
     {
@@ -31,9 +29,6 @@ export default function RitModel() {
   ];
 
   React.useEffect(() => {
-    const ACTIVECLASS = "active";
-    const IMAGES = document.querySelectorAll(".flex-card-container");
-
 
 
   }, []);
