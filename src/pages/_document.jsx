@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <title>Renvnza'24</title>
           <link rel="icon" href="/icon512.png" />
-          <meta name="description" content="Renvnza'24" />
+          <meta name="description" content="Get ready to immerse yourself in the electrifying beats and vibrant energy of South India's largest techno cultural extravaganza, Renvnza '24" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="apple-touch-icon" href="/icon512.png" />
         </Head>
